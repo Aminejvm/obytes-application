@@ -210,8 +210,8 @@ export default function Home() {
           >
             <Text.P>
               <Text.Strong>About my education</Text.Strong>: I've graduated in
-              late 2019 with bachelor degree in both computer science, and a
-              professional degree in networking and telecommunications
+              late 2019 with a bachelor degree in computer science, and a
+              professional degree in networking and telecommunications.
             </Text.P>
           </motion.div>
         </AnimatedSection>
@@ -231,9 +231,9 @@ export default function Home() {
             transition={{ duration: 0 }}
           >
             <Text.P>
-              <Text.Strong>Part of Obytes</Text.Strong>: I take my job with
-              responsability, I'll try my best to be a team player, and grow
-              alongside the team.
+              <Text.Strong>Part of Obytes</Text.Strong>: I'm committed to taking
+              my job responsibly, and my goal to succeed as a team member, and
+              grow alongside it.
             </Text.P>
           </motion.div>
         </AnimatedSection>
@@ -247,7 +247,7 @@ export default function Home() {
               display: "flex",
               flexDirection: "column",
               justifyContent: "space-between",
-              marginTop:"1rem",
+              marginTop: "1rem",
               padding: "3rem 0",
             }}
           >
@@ -272,17 +272,17 @@ export default function Home() {
 const informations = [
   {
     title: "Gfree",
-    description: "Co-founded with two of my friends.",
+    description: "Co-founder of a gluten free community.",
     href: "http://gfree.co/",
   },
   {
     title: "Portfolio",
-    description: "Where I write about what ResumeI learn.",
+    description: "Sharing my knowledge on my blog.",
     href: "https://aminejv.me/",
   },
   {
     title: "Resume",
-    description: "Highlights of my education and my professional experiences.",
+    description: "Academic curriculum and professional experiences.",
     href: "https://aminejv.me/resume.pdf",
   },
 ];
