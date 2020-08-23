@@ -298,7 +298,7 @@ const A = styled.a`
 `;
 
 const BigTitle = styled.h1`
-  font-size: 8rem;
+  font-size: 7rem;
   color: #102a43;
   line-height: 1.1;
   max-width: 7ch;
