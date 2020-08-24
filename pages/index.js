@@ -233,7 +233,7 @@ export default function Home() {
             <Text.P>
               <Text.Strong>Part of Obytes</Text.Strong>: I'm committed to taking
               my job responsibly, and my goal to succeed as a team member, and
-              grow alongside it.
+              grow alongside with it.
             </Text.P>
           </motion.div>
         </AnimatedSection>
