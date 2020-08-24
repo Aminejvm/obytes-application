@@ -1,7 +1,7 @@
+import styled, { Box } from "@xstyled/styled-components";
 import { motion, transform } from "framer-motion";
 import Head from "next/head";
 import * as React from "react";
-import styled from "styled-components";
 import { Stack, Text } from "../components";
 
 const AnimatedSection = styled.div`
@@ -240,16 +240,25 @@ export default function Home() {
       </DarkSection>
       <BackgroundSection opacity={imageOpacity}></BackgroundSection>
       <WhiteSection>
-        <div style={{ display: "flex", margin: "auto" }}>
-          <BigTitle>More About Myself</BigTitle>
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              justifyContent: "space-between",
-              marginTop: "1rem",
-              padding: "3rem 0",
-            }}
+        <Box
+          display="flex"
+          width={{ xs: "80%", md: "fit-content" }}
+          flexDirection={{
+            xs: "column",
+            md: "row",
+          }}
+          m="auto"
+        >
+          <BigTitle fontSize={{ xs: "3rem", md: "7rem" }}>
+            More About Myself
+          </BigTitle>
+          <Box
+            display="flex"
+            flexDirection="column"
+            justifyContent="space-between"
+            minHeight={300}
+            mt="1rem"
+            p="3rem 0"
           >
             {informations.map((item) => (
               <Stack key={item.title}>
@@ -259,11 +268,11 @@ export default function Home() {
                 <Text.Small dark>{item.description}</Text.Small>
               </Stack>
             ))}
-          </div>
-        </div>
-        <div style={{ display: "flex", marginTop: "auto", padding: "16px" }}>
+          </Box>
+        </Box>
+        <Box display="flex" mt="auto" p="16px">
           <ObytesIcon style={{ margin: "0 auto" }} />
-        </div>
+        </Box>
       </WhiteSection>
     </div>
   );
@@ -297,7 +306,7 @@ const A = styled.a`
   }
 `;
 
-const BigTitle = styled.h1`
+const BigTitle = styled.h1Box`
   font-size: 7rem;
   color: #102a43;
   line-height: 1.1;

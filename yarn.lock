@@ -968,7 +968,7 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
-"@babel/runtime@^7.8.4":
+"@babel/runtime@^7.10.5", "@babel/runtime@^7.8.4":
   version "7.11.2"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.11.2.tgz#f549c13c754cc40b87644b9fa9f09a6a95fe0736"
   integrity sha512-TeWkU52so0mPtDcaCTxNBI/IHiz0pZgr8VEFqXFtZWpYD08ZB6FaSwVAS8MKRQAP3bYKiVjwysOJgMFY28o6Tw==
@@ -1239,6 +1239,39 @@
     "@webassemblyjs/ast" "1.9.0"
     "@webassemblyjs/wast-parser" "1.9.0"
     "@xtuc/long" "4.2.2"
+
+"@xstyled/core@^1.18.1":
+  version "1.18.1"
+  resolved "https://registry.yarnpkg.com/@xstyled/core/-/core-1.18.1.tgz#6f0ba150dd318ed6a3d0826e83fa58d5f200ddc1"
+  integrity sha512-yJShh5d+VjpP48ncNSCTiXLUQo0JVNa7WIgNmFesC27RZm5KBBSgLncc6xD61PUxoNnTwzrmYFrMJrfX1L04yA==
+  dependencies:
+    "@babel/runtime" "^7.10.5"
+    "@xstyled/system" "^1.17.2"
+
+"@xstyled/styled-components@^1.18.1":
+  version "1.18.1"
+  resolved "https://registry.yarnpkg.com/@xstyled/styled-components/-/styled-components-1.18.1.tgz#d5aba1e07fc9e76a2037bfb958743d1508348266"
+  integrity sha512-KVMlcG+0G/6F0+H+KOWvRBlrOjhEMiTU5yVGzRT0vQKkWRzfobHDpJuC0xakF/d5JWTu0dRYKZ0kyWVX3cH1Lw==
+  dependencies:
+    "@babel/runtime" "^7.10.5"
+    "@xstyled/core" "^1.18.1"
+    "@xstyled/system" "^1.17.2"
+    "@xstyled/util" "^1.17.2"
+
+"@xstyled/system@^1.17.2":
+  version "1.17.2"
+  resolved "https://registry.yarnpkg.com/@xstyled/system/-/system-1.17.2.tgz#06459804fd47abc1a3dca967c46feda9406f92b6"
+  integrity sha512-XzNpCfOnsPzP23sS5HzhYBkS0hyM0zFKUEeprtuXjeF2OJWX8ZzsHMTE2z7KEy/OW7OWw3tkoPJmmiiBQ+6/CQ==
+  dependencies:
+    "@babel/runtime" "^7.10.5"
+    "@xstyled/util" "^1.17.2"
+
+"@xstyled/util@^1.17.2":
+  version "1.17.2"
+  resolved "https://registry.yarnpkg.com/@xstyled/util/-/util-1.17.2.tgz#6b6fed6f8c8acada1805721d054f31a508c59d02"
+  integrity sha512-+JaSZK1k2rOEM2YMwUOum77CPghhTyrlxuTuxyiJbdIxYSTtzBRVmPAul30V6pFRYgK8NMdfm7f+yT28rTr8pg==
+  dependencies:
+    "@babel/runtime" "^7.10.5"
 
 "@xtuc/ieee754@^1.2.0":
   version "1.2.0"
